@@ -1,0 +1,1150 @@
+@font-face           /* Appel du fichier contenant la police  */
+{
+       font-family: "Raleway" ;
+       src:url('/polices/Raleway-Regular.ttf');
+       font-weight: normal;
+       font-style: normal;
+}
+@font-face           /* Appel du fichier contenant la police  */
+{
+       font-family: "Raleway" ;
+       src:url('/polices/Raleway-Italic.ttf');
+       font-weight: normal;
+       font-style: italic;
+}
+
+@font-face           /* Appel du fichier contenant la police  */
+{
+       font-family: "Raleway" ;
+       src:url('/polices/Raleway-Bold.ttf');
+       font-weight: 700;
+       font-style: normal;
+}
+
+@font-face           /* Appel du fichier contenant la police  */
+{
+       font-family: "Raleway" ;
+       src:url('/polices/Raleway-BoldItalic.ttf');
+       font-weight: 700;
+       font-style: italic;
+}
+
+body
+{
+       width: 98%;
+       font-family: "Raleway" , serif;
+}
+
+/*================================================================================================================*/
+
+
+/* CSS du HEADER  */
+
+/* Logo  +  Navigateur   */
+
+header
+{
+       width: 98%;
+}
+
+.logo_summary                      /* 1ère ligne qui comprend le logo Reservia et le sommaire aux 3 hyperliens  */
+{
+       display: flex;   
+       justify-content: space-between;              
+}
+
+
+#logoreservia
+{
+       width: 140px;
+       height: 75px;
+       margin-top: 0.5cm;
+}
+
+
+.summary
+{ 
+       display:flex;               /*   les 3 hyperliens sont alignés  */
+       justify-content: flex-end;
+       font-size: 16px;
+       margin-top: 1cm;
+}
+
+
+
+.Commodity
+{
+       margin-right: 2cm;
+       text-decoration: none;
+}
+
+.Commodity:hover
+{
+      border-top: 2px solid blue;
+      padding-top: 1cm;
+      margin-top: -1.2cm;
+}
+
+
+.Activity
+{
+       color: black;
+       margin-right: 2cm;
+       text-decoration: none;
+}
+
+.Activity:hover
+{
+       border-top: 2px solid blue;
+       padding-top: 1cm;
+       margin-top: -1.2cm;
+}
+
+
+.inscription
+{
+       margin-left: 1%;
+       text-decoration: none;
+}
+
+.inscription:hover
+{
+       border-top: 2px solid blue;
+       padding-top: 1cm;
+       margin-top: -1.2cm;
+}
+
+
+/*=====================================================================================================================*/
+
+
+                         /* Partie du HEADER où se trouve le formulaire de recherche  */
+
+
+.text1_find_commodity
+{
+       font-size:  30px;
+       margin-top: 0.5cm; 
+       margin-left: 1cm;
+}
+
+
+.text2_find_commodity
+{
+       font-size:  18px;
+       margin-left: 1cm;
+       margin-top: -0.5cm;
+}
+
+
+
+.research_form                     /*  Disposition de la ligne de recherche en Row : icône + zone de rech. + bouton */
+{
+       display: flex;
+       margin-left: 1cm;
+       margin-bottom: 1cm;
+
+}     
+ 
+             
+.map_icon                          /* Formatage de l'icône  "Map"   de la ligne  "RECHERCHE"   */
+{
+       width: 16px;
+       height: 19px;
+       padding-block: 0.40cm;
+       padding-inline: 0.3cm;
+       background-color: rgb(242, 242, 242);
+       border:solid rgb(242,242,242);
+       border-top-left-radius: 20px 20px;
+       border-bottom-left-radius: 20px 20px;
+
+}
+
+
+
+.research                           /* Format et Positionnement de la zone de saisie */
+{
+       width: 7cm;
+       height: 1.35cm;
+       border: rgb(235, 228, 228) solid 1px ;
+       font-weight: bold;
+       font-size: 0.5cm;
+       padding-left: 0.5cm;
+       cursor: pointer;
+} 
+
+
+.research_button
+{
+       position: relative;
+       width: 4cm;
+       height: 1.45cm;
+       background-color: rgb(0,101,252);
+       border-top-right-radius: 20px 20px;
+       border-bottom-right-radius: 20px 20px;
+       cursor: pointer;
+}
+
+.research_button_text
+{
+       position:absolute;
+       top : 0.4cm; left: 0.5cm;
+       color: white;
+       font-size: 0.5cm;
+
+}
+
+
+
+
+
+/*================================================================================================================*/
+
+
+                                        /*   Les filtres dans HEADER    */
+
+
+.filter                        /* Les éléments de cette ligne seront en Display Row   */            
+{
+       display: flex;
+       flex-wrap: wrap;
+       margin-left: 1cm;
+       margin-top: 0.5cm;
+}
+    
+              
+.title_filter                     /* Format du texte du titre de cette ligne-bloc  */
+{
+       font-size: 22px;
+}
+
+
+
+.button_filter
+{
+       display: flex ;
+       width: auto;
+       height:1.2cm;
+       background-color: white;
+       border: 2px solid;
+       border-color: rgb(217,217,217) ;
+       border-radius: 30px;
+       margin-top: 0.3cm;
+       margin-left: 1.7cm;
+}
+
+
+
+.contour_icon_filter
+{
+       width: 1.3cm;
+       height: 1.3cm;
+       margin-left: -0.1cm;
+       margin-top: -2px;
+       border-radius: 100%;
+       background-color: rgb(222,235,255);
+}
+
+
+
+.icon_filter
+{
+       width: 0.8cm;
+       height: 0.8cm;
+       margin-top: 0.2cm;
+       margin-left: 0.25cm;
+}
+
+
+
+.text_filter                   /* Carte commune pour le format et le positionnement des icônes de la ligne filtre   */
+{
+       font-size: 0.5cm;
+       font-weight: bold;
+       margin-left: 0.8cm;
+       margin-right: 1cm;
+       margin-top: 0.2cm;
+      
+}
+
+
+
+             
+/*================================================================================================================*/
+
+
+                            /*    Ligne d'information   */
+
+
+.information
+{
+       display:flex ;
+       flex-wrap: wrap;
+}
+
+
+.exclamation_mark_icon
+{
+       width:0.9cm;
+       height: 0.9cm;
+       margin-top: 0.9cm;
+       margin-left: 1cm;
+}
+
+
+.text_information
+{
+       font-size: 18px;
+       margin-top: 1.1cm ;
+       margin-left: 0.4cm;
+}
+
+
+
+/*================================================================================================================*/
+
+
+                                       /*    CORPS PRINCIPALE DE LA PAGE    */
+
+
+
+.container_accomodation            /*  Ce bloc comprend  "Hébergement à Marseille"  +  "Les plus populaires"  */
+{
+       display: flex;
+       width: 98%;
+       flex-wrap:wrap;
+       margin-top: 1cm;
+       margin-left: 1cm;
+}
+
+
+
+
+/*   Bloc partie gauche  " Hébergements  à Marseille"    */
+
+
+.accomodation                             /*  Ce bloc , grisé  , de la partie gauche , contient le titre "Hébergements 
+                                             à Marseille ,  les 6 annonces  et   "Afficher plus"  */
+{
+       max-width: 64% ;                   /* Ce bloc partage la largeur , en proportion , avec la partie droite "Les plus populaires" */
+       display : flex ;
+       flex-direction: column;             
+       background-color: rgb(242, 242, 242);
+       border-radius: 10px;  
+       margin-bottom: 1.5cm;  
+       margin-right: 1.2cm;  
+}
+
+
+
+
+.title_card                             /*  Pour le format des 3 grands titres de la page principale */
+{
+       margin-top: 1cm;
+       font-size:  0.9cm;
+       margin-left: 1.2cm;
+}
+
+#Hébergements
+{
+       margin-left: 1.5cm;
+}
+
+
+
+.six_offers_accomodation                  /*  Ce bloc contient les 6 annonces du bloc "Hébergements"   */
+{
+       display : flex;                    /* les 6 annonces seront en ligne et en wrap    */
+       flex-wrap: wrap;
+       max-width: 100%;
+       margin-left: 1cm;
+       margin-top: -0.2cm;
+
+}
+
+
+
+
+.one_offer_accomodation_card              /*  Ce bloc contient (encadre) le contenu d'une annonce : photo + texte + étoiles  */
+{
+       width : 9cm;
+       height: 8.4cm;
+       margin-bottom: 0.5cm;
+       margin-right: 0.8cm;
+       border-radius: 10px;
+       background-color: white;  
+       cursor:pointer;
+}
+
+
+
+
+/* Téléchargement des 6 photos-hébergements  */
+
+.photo_cannebiere
+{
+       background-image: url(images/hebergements/4_small/cannebiere.jpg);
+}
+
+.photo_port
+{
+       background-image: url(images/hebergements/4_small/port.jpg);
+}
+
+.photo_mouettes
+{
+       background-image: url(images/hebergements/4_small/mouettes.jpg);
+}
+
+.photo_mer
+{
+       background-image: url(images/hebergements/4_small/mer.jpg);
+}
+
+.photo_panier
+{
+       background-image: url(images/hebergements/4_small/panier.jpg);
+}
+
+.photo_amina
+{
+       background-image: url(images/hebergements/4_small/amina.jpg);     
+}
+
+
+
+
+.photo_accomodation_card                       /*  Format de la photo dans les annonces hébergements   */
+{
+       background-position: center;
+       background-size: cover;
+       border-radius: 10px;
+       width : 8.6cm;
+       height:5.5cm;
+       margin-left: 0.2cm; 
+       margin-top: 0.2cm; 
+}
+
+
+
+.text1_accomodation_card
+{
+       font-weight: bold;
+       font-size: 20px;
+       margin-top: 0.05cm;
+       margin-left: 0.2cm; 
+}
+
+
+.text2_accomodation_card
+{
+       font-size: 20px;
+       margin-top: -0.3cm;
+
+       margin-left: 0.2cm; 
+}
+
+
+.stars_accomodation_card
+{
+       padding-bottom: 0.5cm;
+       margin-left: 0.2cm; 
+}
+
+
+
+.bottom_accomodation
+{
+       cursor: pointer;
+       margin-left: 1cm;
+       font-size: 22px ;
+} 
+
+
+
+/*================================================================================================================*/
+
+
+                            /*   Bloc partie droite  " Les plus populaires "    */
+
+
+
+
+.most_popular                             /*  Ce bloc , grisé  , de la partie droite , contient le titre "les plus 
+                                              populaires "  */
+{
+       width: 14.5cm;   
+       height:23.1cm;                        /* Ce bloc partage la largeur , en proportion , avec la partie gauche "Hébergements" */
+       display : flex ;
+       flex-direction: column;             
+       background-color: rgb(242, 242, 242);
+       border-radius: 10px;  
+       margin-bottom: 1.1cm;   
+}
+
+
+
+
+.title_most_popular                 /*   Titre de la partie grisée de droite "Les plus populaires"    */
+{                                   /*   comprenant  le titre + la petite icône à droite - Display Row   */
+       display: flex;
+       justify-content: space-between;
+       margin-bottom: -0.2cm;
+
+}
+
+
+
+
+.icon_title_most_popular             /*  Icône du titre de la partie grisée de droite "Les plus populaires"  */
+{
+       margin-top: 1cm;
+       margin-left: 2cm;
+       margin-right: 0.5cm;
+       cursor:pointer;
+}
+
+
+
+
+.one_offer_most_popular_card         /*   Carte décrivant un bloc ( Photo + 2 textes + Etoiles )  d'une des 3 annonces */
+{
+       display: flex;              /*  La  photo et le bloc texte seront alignés   */
+       width : 12.2cm;
+       height: 6cm;
+       margin-left: 1cm;
+       margin-bottom: 1cm;
+       border-radius: 10px;
+       background-color: white;  
+       cursor:pointer;
+
+}
+
+
+
+
+/*    Téléchargement des 3 photos "Les plus populaires"   */
+
+
+.photo_matin
+{
+       background-image: url(images/hebergements/4_small/soleil_matin.jpg);
+}
+
+.photo_coeur_eau
+{
+       background-image: url(images/hebergements/4_small/coeur_eau.jpg);
+}
+
+.photo_blanc_bleu
+{
+       background-image: url(images/hebergements/4_small/bleu_blanc.jpg);
+}
+
+
+.photo_most_popular_card           /*  Carte pour le format des photos des 3 annonces  "Les plus populaires"   */
+{
+       background-position: center;
+       background-size: cover;
+       border-radius: 10px;
+       width : 6.2cm;
+       height: 5.4cm;
+       margin-left: 0.2cm; 
+       margin-top: 0.2cm; 
+       margin-bottom: 0.2cm;
+}
+
+
+
+
+.bloc_text_most_popular            /* Carte pour le format des blocs textes des 3 annonces  */
+{
+       display: flex;
+       flex-direction: column;
+}
+
+
+
+.text1_most_popular_card
+{
+       margin-left: 0.5cm;
+       font-size: 18px;
+}
+
+
+.text2_most_popular_card
+{
+       margin-left: 0.5cm;
+       margin-top: 1.5cm;
+}
+
+
+.stars_most_popular_card
+{
+       margin-left: 0.5cm;
+       margin-top: 1.3cm;
+}
+
+
+
+
+
+/*================================================================================================================*/
+
+
+
+
+                     /*  2ème parties du corps principal de la page  :   Activités à Marseille   */
+
+
+
+
+
+.container_activity      /*  container parent  contenant les 6 photos et leurs légendes  - alignement horizontal  */
+{
+       display: flex;
+       justify-content: space-between;
+       width: 95%;
+       flex-wrap: wrap;
+       background-color: white;
+       margin-left: 1.2cm;
+       margin-bottom: 1cm;
+       margin-top: -0.5cm;
+ }
+ 
+
+
+
+
+.text_and_big_photo_card          /* container photo grand format + texte  -  alignement vertical  */
+{
+       display:flex;
+       flex-direction: column;
+       border-radius : 15px;
+       box-shadow: 0px 5px 3px 5px rgb(246, 246, 246);
+       height:17cm;
+       cursor:pointer;       
+}
+
+
+
+.text_and_little_photo_card                /* container photo petit format + texte  -  alignement vertical  */
+{
+       display:flex;
+       flex-direction: column;
+       border-radius : 15px;
+       box-shadow: 0px 5px 3px 5px rgb(246, 246, 246);
+       margin-bottom: 0.9cm;   
+       cursor:pointer;         
+}
+
+
+
+
+
+/*    Téléchargement des 6 photos du bloc "Activité"  */
+
+
+.photo_vieux_port
+{
+       background-image: url(images/activites/4_small/vieux_port.jpg);
+}
+
+.photo_pomegues
+{
+       background-image: url(images/activites/4_small/pomègues.jpg);
+       width: 11.5cm;
+       height: 7.7cm;
+}
+
+.photo_frioul
+{
+       background-image: url(images/activites/4_small/frioul.jpg);     /* Les tailles des petites photos sont toutes différentes */
+       width: 11.5cm;
+       height: 5.7cm;
+}
+
+.photo_calanques
+{
+       background-image: url(images/activites/4_small/calanques.jpg);
+}
+
+.photo_dame_garde
+{
+       background-image: url(images/activites/4_small/dame_garde.jpg);
+       width: 11.5cm;
+       height: 6.4cm;
+}
+
+.photo_longchamp
+{
+       background-image: url(images/activites/4_small/longchamp.jpg);
+       width: 11.5cm;
+       height: 7cm;
+}
+
+
+
+.big_size_photo_card                      /*  Carte pour formater les grandes photos  */
+{
+       background-position: center;
+       background-size: cover;
+       width: 10.5cm;
+       height:15.5cm;
+       border-top-left-radius: 15px;
+       border-top-right-radius: 15px;
+}
+
+
+
+
+.little_size_photo_card                          /* Carte pour positionner les petites photos */
+{                                                
+       background-position: center;
+       background-size: cover;
+       border-top-left-radius: 15px;             
+       border-top-right-radius: 15px;  
+}
+
+
+
+.text_activity_card
+{
+       margin-left: 0.5cm;
+}
+
+
+
+      /*================================================================================================================*/                   
+
+
+
+                                   /*   Pieds de page  ( FOOTER ) */
+                                   
+
+footer
+{
+       width: 95%;
+       padding-right: 3.2cm;
+       display:flex ;
+       flex-wrap: wrap;
+       background-color: rgb(242, 242, 242);
+       border-radius: 10px;  
+}
+
+.text_style_card
+{
+       font-size: 18px;
+       margin-left: 1cm;
+       margin-right: 8cm;
+       cursor:pointer;
+}
+
+
+
+/* =========================================================================================================== */
+/*                                                                                                             */                                           
+/*                    *//*  Adaptation Responsive des blocs  ( Media-Queries )   *//*                          */
+/*                                                                                                             */
+/* =========================================================================================================== */
+
+@media screen and (max-width: 680px)
+{
+
+       body                               /* Décalage de la page principale vers la gauche */
+              {
+                     margin-left: -0.5cm;
+              }
+
+
+/* ==============================================   Logo  RESERVIA   ========================================= */
+
+       #logoreservia                      /* Réduction du logo Reservia   */
+              {
+                     width: 80px;
+                     height: 40px;
+                     margin-top: 0cm;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+
+/* ======================================   Sommaire avec les 3 hyperliens    ================================ */
+
+       .summary_queries
+              {
+                     border-bottom: 2px solid rgb(242,242,242);
+                     margin-left: -3cm;
+                     margin-top: 1.5cm;
+                     margin-bottom: 1cm;
+              }
+
+
+
+       .Commodity_queries                       /*  Recadrage de l'hyperlien "Hébergements"    */
+              {
+                     border-bottom: 3px solid blue;
+                     margin-top: 1cm;
+                     margin-right: 4cm;
+                     margin-left: -0.2cm;
+                     padding-bottom: 0.4cm;
+              }
+
+       .Commodity_queries:hover
+              {
+                     border-top: none;
+                     margin-top: 0cm;
+                     padding-bottom: 0.4cm;
+              }
+
+
+       .Activity_queries                        /*  Recadrage de l'hyperlien "Activités"    */
+              {
+                     margin-right: 0cm;
+                     margin-top: 1cm;
+                     padding-bottom: 0.4cm;
+                     color: black;
+              }
+
+       .Activity_queries:hover
+       {
+              border-bottom: 2px solid blue;
+              border-top: none;
+              margin-top: 0cm;
+              padding-bottom: 0.4cm;
+       }
+
+
+
+       .inscription_queries                       /*  Recadrage de l'hyperlien "Inscription"    */
+              {
+                     margin-left: -2cm;
+                     margin-top: -0.7cm;
+              }
+
+       .inscription_queries:hover
+              {
+                     border-top: none;
+                     margin-top: -2cm;
+              }
+/*  ========================================================================================================  */
+
+
+
+
+/* ==============================   Texte  "Trouvez votre hébergement....."    ============================== */
+
+
+       .text1_find_commodity              /*  Recadrage  du texte en haut de page  */
+              {
+                     margin-top: -0.5cm;
+                     font-size: 20px;
+              }
+       
+       .text2_find_commodity   
+              {
+                     font-size: 13px;
+                     margin-top: 0.5cm;
+              }
+
+/*  =========================================================================================================  */
+
+
+
+
+/* =========================================   Bloc de Recherche     ========================================= */
+
+       .research
+              {
+                     width: 5.2cm;
+              }
+
+       .research_form                     /*  Recadrage  de la zone */
+              {
+                     margin-top: 1cm;
+                     margin-left: 1.3cm;
+              }
+
+       .research_button_queries                /*  Modification  du bouton de recherche  */
+              {
+                     width: 1.4cm;
+                     height: 1.45cm;
+                     margin-left: -0.4cm;
+                     border-radius: 17px;
+                     background-image: url(icones/loupe.png);
+                     background-repeat: no-repeat;
+                     background-size: 0.8cm;
+                     background-position: center;
+                     cursor: pointer;
+              }
+
+       .research_button_text
+              {
+                     font-size: 0px;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+
+/* =======================================   Bloc contenant les filtres  ====================================== */
+
+      .text_filter
+              {
+                     margin-left: 0.5cm;
+                     margin-right: 0.5cm;
+                     padding-top: 0.2cm;
+                     font-size: 0.4cm;
+              }
+
+       .button1_filter_queries
+              {
+                     margin-top: 2cm;
+                     margin-left: -1.5cm;
+              }
+
+       .button2_filter_queries
+              {
+                     margin-left: 5.1cm;
+                     margin-top: -1.3cm;
+              }
+
+       .button3_filter_queries
+              {
+                     margin-left: 0.2cm;
+              }
+
+       .button4_filter_queries
+              {
+                     margin-left: 0.2cm;
+              }
+
+
+/*  =========================================================================================================  */
+
+
+
+
+
+/* =======================================   Bloc contenant les filtres  ====================================== */ 
+
+       .information                       /*  Ligne d'information sous les filtres  */
+              {
+                     display:flex ;
+                     flex-wrap:nowrap;
+                     margin-bottom: 1cm;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+
+/* ============================   Bloc "Hébergements"  +  "Les plus populaires"   ============================= */
+
+       .container_accomodation                  /*  Ce bloc comprend  "Hébergement à Marseille"  +  "Les plus populaires"  */
+              {
+                     display: flex;
+                     flex-direction: column-reverse;
+                     max-width: 100%;
+                     margin-top: 1cm;
+                     margin-left: 1cm;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+
+/* ========================================   Bloc  "Les plus populaires"   ================================== */
+
+       .most_popular                             /*  On ajuste la taille du bloc grisé  "Les plus populaires"  */
+              {
+                     width: 9.5cm;
+                     height: 20cm;
+                     margin-left: -0.3cm;
+ 
+              }
+
+
+       .one_offer_most_popular_card          /*  On ajuste la taille des blocs annonce ( photos+textes ) du bloc "Les + populaires */
+              {
+                     width: 9.3cm;
+                     height: 5.2cm;
+                     margin-left: 0.1cm;
+              }
+
+
+       .title_most_popular_queries
+
+              {
+                     font-size: 0.5cm;
+                     margin-left: 10px;
+                     margin-top: 6px;
+                     padding-bottom: 0.4cm;
+              }
+
+       .icon_title_most_popular_queries
+              {
+                     margin-right: 0.2cm;
+                     margin-top: 6px;
+                     padding-bottom: 0.2cm;
+              }
+
+       .photo_most_popular_card
+              {
+                     width: 5cm;
+                     height: 4.8cm;
+                     border-top-right-radius: 0px;
+                     border-bottom-right-radius: 0px ;
+              }
+
+
+       .text1_most_popular_card              /*  On ajuste la taille du 1er texte du bloc "Les + populaires */
+              {
+                     margin-bottom: -1cm;
+                     font-size: 0.45cm;
+              }
+
+       .text2_most_popular_card  
+              {
+                     font-size: 0.4cm;
+              }
+
+       .stars_most_popular_card
+              {
+                     margin-top: 1cm;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+/* ==========================================   Bloc  "Hébergements"   ======================================== */
+
+       .accomodation                      /*  Ajustement du bloc grisé de "Hébergements"  */
+              {
+                     max-width: none;
+                     width: 9.5cm;
+                     height: 57cm;
+                     margin-left: -0.3cm;
+              }
+
+       .one_offer_accomodation_card       /*  Ajustement des blocs annonces ( Photos + textes ) de "Hébergements"  */
+              {
+                     width: 9.3cm;
+                     border-radius: 15px;
+                     margin-right: 0cm;
+                     margin-left: -0.9cm;
+              }
+
+       .photo_accomodation_card           /*  Ajuste des photos dans les annonces de "Hébergements"   */
+              {
+                     width: 8.9cm;
+              }
+
+       .title_card_queries
+              {
+                     font-size: 0.5cm;
+                     padding-bottom: 0.1cm;
+              }
+
+       .bottom_accomodation
+              {
+                     font-size: 0.5cm;
+                     margin-left: 0.6cm;
+                     margin-top: -0.25cm;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+/* ============================================   Bloc  "Activités"   ========================================= */
+
+       .container_activity
+              {
+                     margin-left: 0cm;
+              }
+
+       
+       .text_and_big_photo_card
+              {
+                     width: 9.5cm;
+                     height: 7cm;
+                     margin-bottom: 1cm;
+                     margin-left: 0.7cm;
+              }
+
+       .photo_vieux_port
+              {
+                     width : 9.3cm;
+                     height: 10cm;
+              }
+
+       .photo_calanques
+              {
+                     width : 9.3cm;
+                     height: 10cm;  
+              }
+
+
+       .text_and_little_photo_card
+              {
+                     width: 9.5cm;
+                     height: 7cm;
+                     margin-bottom: 1cm;
+                     margin-left: 0.7cm;
+              }
+
+       .photo_pomegues
+              {
+                     width : 9.3cm;
+                     height: 10cm;
+                     margin-left: 0.2cm;
+              }
+
+       .photo_frioul
+              {
+                     width : 9.3cm;
+                     height: 10cm;   
+                     margin-left: 0.2cm; 
+              }
+
+       .photo_dame_garde
+              {
+                     width : 9.3cm;
+                     height: 10cm;   
+                     margin-left: 0.2cm; 
+              }
+
+       .photo_longchamp
+              {
+                     width : 9.3cm;
+                     height: 10cm;    
+                     margin-left: 0.2cm;                      
+              }
+
+       .title_card_activité_marseille
+              {
+                     font-size: 0.7cm;
+                     margin-bottom: 0.75cm;
+              }
+/*  =========================================================================================================  */
+
+
+
+
+/* ============================================   Bloc Pied de page   ========================================= */
+
+       footer
+              {
+                     width: 100%;
+                     
+              }
+
+
+       }

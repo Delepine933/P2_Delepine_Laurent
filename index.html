@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Reservia.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Page Web Reservia</title>
+    </head>
+
+                <!-- =========================================================================================  -->
+
+    <body>
+        
+                                                <!--   En-tête de la page -->
+
+
+            <header>
+                <div class="logo_summary">       <!--   Bloc Logo Reservia + le  Sommaire  avec les 3 liens - en Display Row -->
+                    
+                    <figure>
+                        <img id="logoreservia" src="images/logo/Reservia@3x.png"  alt="Icône Reservia"/>
+                    </figure>
+                        
+                    <nav class="summary summary_queries">                                
+                        <a href="#Hébergements" class="Commodity Commodity_queries" > Hébergements  </a>
+                                
+                        <a href="#Activités" class="Activity Activity_queries"> Activités  </a>
+                                
+                        <a href="#sinscrire" class="inscription inscription_queries"> <strong>S'inscrire </strong> </a>
+                    </nav>        
+                        
+                </div>
+
+                <!-- ===========================================================================================  -->
+
+
+                              <!--  Bloc où se situe la zone de saisie de recherche -->
+
+
+                <div> 
+                        <h3 class="text1_find_commodity"> <strong> Trouvez votre hébergement pour des Vacances de rêve </strong> </h3>
+                        <p class="text2_find_commodity"> En plein centre ville ou en pleine nature </p>
+                </div>
+
+                <div class="research_form">                        
+                        <img class="map_icon" src="icones/map-marker.svg" alt="icone map-marker"/>
+                        <input class="research" type="text"  placeholder="Marseille,France"  />
+                        <div class="research_button research_button_queries" > 
+                            <div class="research_button_text"> Rechercher </div>  
+                        </div>             
+                </div>
+                    
+                  <!-- =========================================================================================  --> 
+
+
+                                                   <!--  LES FILTRES   -->
+                
+
+                <div class="filter">               
+
+                                <p class="title_filter">  <strong> Filtres </strong>   </p>
+                                
+                                <div class="button_filter button1_filter_queries">
+                                    <div class="contour_icon_filter">
+                                        <img class="icon_filter" src="icones/bill_icon_filter.png" alt="Icône bill" >   
+                                    </div>         
+                                    <p class="text_filter"  > Economique </p>
+                                </div>
+
+                                                     <!-- ===============  -->
+                            
+                                <div class="button_filter button2_filter_queries">
+                                    <div class="contour_icon_filter">
+                                         <img class="icon_filter" src="icones/child_icon_filter.png" alt="Icône family" > 
+                                    </div>
+                                    <p class="text_filter" > Familial </p>  
+                                </div>
+                                                           
+                                                      <!-- ===============  -->
+                            
+                                <div class="button_filter button3_filter_queries">
+                                    <div class="contour_icon_filter">
+                                         <img class="icon_filter" src="icones/heart_icon_filter.png"  alt="Icône heart" > 
+                                    </div>
+                                     <p class="text_filter" > Romantique </p>
+                                </div>
+
+                                                       <!-- ===============  -->
+                            
+                                <div class="button_filter button4_filter_queries">
+                                    <div class="contour_icon_filter">
+                                         <img class="icon_filter" src="icones/dog_icon_filter.png" alt="Icône dog" >  
+                                    </div>                               
+                                   <p class="text_filter" > Animaux autorisés</p>  
+                                </div>
+
+                </div>    <!--   Fin  du Bloc Filtre  -->
+
+                   
+
+                <!-- =========================================================================================  -->
+
+
+                                        <!--   Ligne d'information  -->
+
+                <div class="information">
+                        
+                        <img class="exclamation_mark_icon" src="icones/i_icon.png" alt="Icône Information" > 
+                        
+                        <p class="text_information"> Plus de 500 logements sont disponibles dans cette ville </p>
+                        
+                </div>
+       
+            </header>      <!--  Fin  de  l'entête    -->
+
+
+
+                <!-- =========================================================================================  -->
+
+
+
+                                         <!--   CORPS PRINCIPALE  DE LA  PAGE  -->
+
+
+
+            <div class="container_accomodation">     <!--   Bloc Hébergements à Marseille + Les plus populaires - En display Row -->
+
+                <div  class="accomodation">         <!--   Bloc de gauche Hébergements à Marseille - Bloc grisé en Display Column  -->
+
+                    <section> 
+                        <h3 class="title_card title_card_queries" id="Hébergements">  Hébergements  à  Marseille   </h3  >
+                    </section>
+
+                    <div class="six_offers_accomodation">        <!--  Bloc contenant les 6 offres - En display Row    -->  
+                        
+                        <div class="one_offer_accomodation_card">       <!--  Bloc décrivant une annonce en display  Column -->
+
+                            <div class="photo_accomodation_card photo_cannebiere"  ></div>
+                            <p class="text1_accomodation_card">  Auberge de la Cannebière  </p>
+                            <p class="text2_accomodation_card">  Nuit à partir de <strong>  25€ </strong> </p>
+                            <img class="stars_accomodation_card" src="icones/4_étoiles_bleues.png" alt="Logo 4 stars" width=80 height=17>
+
+                        </div>    
+
+                        <div class="one_offer_accomodation_card">         <!--  Bloc décrivant une annonce en display  Column -->
+                                
+                                <div  class="photo_accomodation_card photo_port" > </div>
+                                <p class="text1_accomodation_card" >  Hôtel du port </p>
+                                <p class="text2_accomodation_card">  Nuit à partir de <strong>  52€ </strong> </p>
+                                <img class="stars_accomodation_card" src="icones/5_étoiles_bleues.png" alt="Loo 5 stars" width=80 height=20>
+                        </div>
+                        
+                        <div class="one_offer_accomodation_card">         <!--  Bloc décrivant une annonce en display  Column -->
+
+                                <div class="photo_accomodation_card photo_mouettes"  > </div>
+                                <p class="text1_accomodation_card" >  Hôtel les mouettes </p>
+                                <p class="text2_accomodation_card">  Nuit à partir de <strong>  52€ </strong> </p>
+                                <img class="stars_accomodation_card" src="icones/4_étoiles_bleues.png" alt="Logo 4 stars" width=80 height=17>
+                        </div>
+
+                        <div class="one_offer_accomodation_card">         
+
+                                <div class="photo_accomodation_card photo_mer"  > </div>
+                                <p class="text1_accomodation_card" >  Hôtel de la mer </p>
+                                <p class="text2_accomodation_card">  Nuit à partir de <strong>  46€ </strong> </p>
+                                <img class="stars_accomodation_card" src="icones/3_étoiles_bleues.png" alt="Logo 3 stars" width=86 height=22>
+                        </div>
+
+                        <div class="one_offer_accomodation_card">
+
+                            <div class="photo_accomodation_card photo_panier" > </div>
+                            <p class="text1_accomodation_card" >  Auberge La Panier </p>
+                            <p class="text2_accomodation_card">  Nuit à partir de <strong>  23€ </strong> </p>
+                            <img class="stars_accomodation_card" src="icones/4_étoiles_bleues.png" alt="Logo 4 stars" width=80 height=17>
+                        </div>
+
+                        <div class="one_offer_accomodation_card">
+
+                            <div class="photo_accomodation_card photo_amina" > </div>
+                            <p class="text1_accomodation_card" >  Hôtel chez Amina </p>
+                            <p class="text2_accomodation_card">  Nuit à partir de <strong>  96€ </strong> </p>
+                            <img class="stars_accomodation_card" src="icones/5_étoiles_bleues.png" alt="Logo 5 stars" width=80 height=20>
+                        </div> 
+
+                    </div>     <!--  Fin du bloc des 6 offres d'hébergements   -->
+
+
+                    <p class="bottom_accomodation"> <strong> <br>Afficher plus </strong>  </p> 
+
+
+                </div>    <!--  Fin  du bloc de gauche  " Hébergements"    -->
+
+
+
+            <!-- ==============================================================================================  -->
+
+
+
+                                  <!--  Partie droite  :   " Les plus populaires"   -->
+
+
+
+                <div class="most_popular">         <!--  Bloc grisé encadrant le titre et les 3 annonces verticales - Display en Column -->
+
+                    <div class="title_most_popular">     <!--  Bloc  Titre + Icone , Display en Row  -->  
+
+                            <p class="title_card title_most_popular_queries">   <strong>  Les plus populaires  </strong>  </p>
+                            <img class="icon_title_most_popular icon_title_most_popular_queries" src="icones/chart-line-solid.svg"  alt="Icône Chart-line"  width=25 height=25 >
+
+                    </div>
+
+
+                    <div class="one_offer_most_popular_card">       <!--  Bloc décrivant une annonce - En display  row -->  
+                                                                    <!--   comprenant la photo + le bloc :[ 2 textes + Etoiles ] -->
+                            <div class="photo_most_popular_card photo_matin"  > </div>
+                            <div  class="bloc_text_most_popular_card">
+                                <p class="text1_most_popular_card" >  <strong> Hôtel le soleil <br> du matin  </strong> </p>
+                                <p class="text2_most_popular_card">  Nuit à partir de <strong>  128€ </strong> </p>
+                                <img class="stars_most_popular_card" src="icones/5_étoiles_bleues.png" alt="Logo 5 stars" width=80 height=20>
+                            </div>
+                            
+                    </div>
+
+                    <div class="one_offer_most_popular_card">       <!--  Bloc décrivant une annonce - En display  row -->  
+                                                                    <!--   comprenant la photo + le bloc :[ 2 textes + Etoiles ] -->
+                        <div class="photo_most_popular_card photo_coeur_eau" > </div>
+                        <div  class="bloc_text_most_popular_card">
+                                <p class="text1_most_popular_card" >  <strong> Au coeur de l'eau <br> Chambre d'hôtes   </strong> </p>
+                                <p class="text2_most_popular_card">  Nuit à partir de <strong>  71€ </strong> </p>
+                                <img class="stars_most_popular_card" src="icones/4_étoiles_bleues.png" alt="Logo 4 stars"  width=80 height=17>
+                            </div>
+                            
+                    </div>
+
+                    <div class="one_offer_most_popular_card">       <!--  Bloc décrivant une annonce - En display  row -->  
+                                                                    <!--   comprenant la photo + le bloc :[ 2 textes + Etoiles ] -->
+                                <div class="photo_most_popular_card photo_blanc_bleu"></div>
+                                <div  class="bloc_text_most_popular_card">
+                                        <p class="text1_most_popular_card" >  <strong> Hôtel Tout Bleu <br> et Blanc   </strong> </p>
+                                        <p class="text2_most_popular_card">  Nuit à partir de <strong>  68€ </strong> </p>
+                                        <img class="stars_most_popular_card" src="icones/4_étoiles_bleues.png" alt="Logo 4 stars" width=80 height=17>
+                                </div>
+                    </div>
+
+
+                </div>
+
+            </div>      <!--  Fin du bloc  gauche  et  droite  (  Hébergements  +  Les plus populaires )   -->      
+        
+
+
+
+          <!-- =====================================================================================================  -->
+
+                
+                            <!-- 2ème partie de la page principale :   Activités à Marseille   -->
+
+
+            <section class="title_card title_card_activité_marseille">
+                <h4>  Activités à Marseille  </h4>
+            </section>
+
+            <div class="container_activity">      <!-- Bloc général contenant les 6 photos :  2 grandes + 2x2 petites -->
+
+                    <div class="text_and_big_photo_card">        <!-- Bloc 1 grande photo -->                    
+                            <div class="big_size_photo_card photo_vieux_port"  > </div>
+                            <p class="text_activity_card">  <strong> Vieux Port </strong> </p> 
+                    </div>
+
+                    <div>           <!--  Bloc de 2 petites photos  --> 
+                        <div class="text_and_little_photo_card">                                          
+                                <div class="little_size_photo_card photo_pomegues" > </div>
+                                <p class="text_activity_card">  <strong> Fort de Pomègues </strong> </p>
+                        </div>
+
+                        <div class="text_and_little_photo_card">   
+                                <div class="little_size_photo_card photo_frioul" > </div>
+                                <p class="text_activity_card">  <strong> Îles de Frioul </strong> </p>
+                        </div>
+                         
+                    </div>
+
+                    <div class="text_and_big_photo_card">        <!-- Bloc 1 grande photo -->   
+                                <div class="big_size_photo_card photo_calanques" > </div>
+                                <p class="text_activity_card">  <strong> Parc National des Calanques </strong> </p>
+                    </div>
+
+                    <div>       <!--  Bloc de 2 petites photos  --> 
+                        <div class="text_and_little_photo_card">                                             
+                                <div class="little_size_photo_card photo_dame_garde"> </div>
+                                <p class="text_activity_card">  <strong> Notre Dame de La Garde </strong> </p>
+                        </div>
+
+                        <div class="text_and_little_photo_card">   
+                                <div class="little_size_photo_card photo_longchamp"> </div>
+                                <p class="text_activity_card">  <strong> Parc Longchamp  </strong> </p>
+                        </div>
+                         
+                    </div>
+
+            </div>
+                        
+
+          <!-- ====================================================================================================  -->
+
+                                                      <!--  Pied de page -->
+
+
+        <footer>
+            <p class="text_style_card text_style_card_queries"> <strong> A propos </strong> <br><br> Fonctionnement du site <br> Conditions générales de vente  <br> Données et confidentialité </p>
+
+            <p class="text_style_card text_style_card_queries">  <strong>Nos hébergements</strong> <br><br> Charte qualité  <br> Soumettre votre hôtel</p>
+
+            <p class="text_style_card text_footer_queries"> <strong>Assistance</strong>  <br> <br>  Centre d'aide  <br>  Nous contacter </p>
+        </footer>
+        
+    </body>
+
+</html>
